@@ -2,6 +2,20 @@
 
 ---
 
+## August 4, 2020
+
+### Ruby
+
+#### CodeWars Kata #1
+
+> Given a year, return the century it is in.
+
+#### Final Working Solution
+
+Divide input by 100.0. Use `ceil` on quotient and return result.
+
+---
+
 ## August 3, 2020
 
 ### Ruby
