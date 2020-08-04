@@ -6,7 +6,7 @@
 
 ### Ruby
 
-#### CodeWars Kata
+#### CodeWars Kata #1
 
 > Complete the function so that it takes an array of keys and a default value and returns a hash (Ruby) / dictionary (Python) with all keys set to the default value.
 
@@ -38,6 +38,14 @@ return new_hash
         return new_hash
     end
 ```
+
+#### CodeWars Kata #2
+
+> In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
+
+##### Final Working Solution
+
+Used `?:` conditional ternary operator.
 
 ---
 
