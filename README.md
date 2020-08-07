@@ -2,11 +2,25 @@
 
 *“[B]y their competence in secular fields and by their personal activity, elevated from within by the grace of Christ, let them work vigorously so that by human labor, technical skill and civil culture, created goods may be perfected according to the design of the Creator and the light of his word.” – St. John Paul II*
 
-
+* [August 6, 2020 (Ruby - AAO)](#august-6-2020)
 * [August 5, 2020 (Ruby - AAO)](#august-5-2020)
 * [August 4, 2020 (Ruby - CW)](#august-4-2020)
 * [August 4, 2020 (Ruby - CW)](#august-3-2020)
 * [Resources I Use & Profiles](#resources--profiles)
+
+---
+
+## August 6, 2020
+
+### Ruby
+
+#### App Academy Open - Intro to Programming > Advanced Problems > Pick Primes
+
+>Write a method `pick_primes` that takes in an array of numbers and returns a new array containing only the prime numbers.
+
+##### Final Working Solution
+
+In the method `pick_primes`, I used `select` on the inputed array in conjunction with a second method that I borrowed from a previous problem called `prime?`.
 
 ---
 
