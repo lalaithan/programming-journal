@@ -2,11 +2,26 @@
 
 *“[B]y their competence in secular fields and by their personal activity, elevated from within by the grace of Christ, let them work vigorously so that by human labor, technical skill and civil culture, created goods may be perfected according to the design of the Creator and the light of his word.” – St. John Paul II*
 
+* [August 7, 2020 (Ruby - AAO)](#august-7-2020)
 * [August 6, 2020 (Ruby - AAO)](#august-6-2020)
 * [August 5, 2020 (Ruby - AAO)](#august-5-2020)
 * [August 4, 2020 (Ruby - CW)](#august-4-2020)
 * [August 4, 2020 (Ruby - CW)](#august-3-2020)
 * [Resources I Use & Profiles](#resources--profiles)
+
+---
+
+## August 7, 2020
+
+### Ruby
+
+#### App Academy Open - Intro to Programming > Advanced Problems > Prime Factors
+
+>Write a method `prime_factors` that takes in a number and returns an array containing all of the prime factors of the given number.
+
+##### Final Working Solution
+
+First, I initialize an empty array called `factors` to hold the prime factors of the input (`num`). Then I decide to use the previously created `prime?` method to determine if an input is prime already and extend it to return the input if `true`.
 
 ---
 
