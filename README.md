@@ -3,7 +3,7 @@
 *“[B]y their competence in secular fields and by their personal activity, elevated from within by the grace of Christ, let them work vigorously so that by human labor, technical skill and civil culture, created goods may be perfected according to the design of the Creator and the light of his word.” – St. John Paul II*
 
 * [Resources I Use & Profiles](#resources--profiles)
-* [August 8, 2020 (Ruby - AAO, Jekyll)](#august-8-2020)
+* [August 8, 2020 (Ruby - AAO & CW, Jekyll)](#august-8-2020)
 * [August 7, 2020 (Ruby - AAO)](#august-7-2020)
 * [August 6, 2020 (Ruby - AAO)](#august-6-2020)
 * [August 5, 2020 (Ruby - AAO)](#august-5-2020)
@@ -40,6 +40,22 @@ To solve this, I wrote a loop to run from 1 to num, inclusive, assigning each en
 ##### Final Working Solution
 
 Initialized an array named `sequence` with the value for `start`. Set a `while` loop to loop for the length of array found from the value of `length` using the `length` method (i.e., `sequence.length`) while it is less than the actual value of `length`, so it will stop at one less than the actual value. Inside the `while` loop, append the product of the value of `sequence[-1]` and `3` to the end of the `sequence` array. When loop has concluded, return `sequence`.
+
+#### Codewars Kata > Keep Hydrated!
+
+>Nathan loves cycling. Because Nathan knows it is important to stay hydrated, he drinks 0.5 litres of water per hour of cycling. You get given the time in hours and you need to return the number of litres Nathan will drink, rounded to the smallest value.
+
+##### Final Working Solution
+
+Use the `floor()` method on the product of `time` and `0.5`.
+
+#### Codewars Kata > Even or Odd
+
+>Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
+
+##### Final Working Solution
+
+Using a ternary `if` statement, test the input `number` modulo `2` and return `"Even"` if the result is `0`, else return `"Odd"`.
 
 ### Personal Projects > Personal Website
 
