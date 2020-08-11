@@ -3,7 +3,7 @@
 *“[B]y their competence in secular fields and by their personal activity, elevated from within by the grace of Christ, let them work vigorously so that by human labor, technical skill and civil culture, created goods may be perfected according to the design of the Creator and the light of his word.” – St. John Paul II*
 
 * [Resources I Use & Profiles](#resources--profiles)
-* [August 10, 2020](JavaScript - CW)
+* [August 10, 2020 (JavaScript - CW)](#august-10-2020)
 * [August 8, 2020 (Ruby - AAO & CW, Jekyll)](#august-8-2020)
 * [August 7, 2020 (Ruby - AAO)](#august-7-2020)
 * [August 6, 2020 (Ruby - AAO)](#august-6-2020)
