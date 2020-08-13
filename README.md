@@ -1,6 +1,6 @@
 # Programming Journal
 
-*“[B]y their competence in secular fields and by their personal activity, elevated from within by the grace of Christ, let them work vigorously so that by human labor, technical skill and civil culture, created goods may be perfected according to the design of the Creator and the light of his word.” – St. John Paul II*
+>*“[B]y their competence in secular fields and by their personal activity, elevated from within by the grace of Christ, let them work vigorously so that by human labor, technical skill and civil culture, created goods may be perfected according to the design of the Creator and the light of his word.” – St. John Paul II*
 
 * [Resources I Use & Profiles](#resources--profiles)
 * [August 10, 2020 (JavaScript - CW)](#august-10-2020)
@@ -10,7 +10,6 @@
 * [August 5, 2020 (Ruby - AAO)](#august-5-2020)
 * [August 4, 2020 (Ruby - CW)](#august-4-2020)
 * [August 3, 2020 (Ruby - CW)](#august-3-2020)
-
 
 ---
 
@@ -56,7 +55,7 @@ To solve this, I wrote a loop to run from 1 to num, inclusive, assigning each en
 
 Initialized an array named `sequence` with the value for `start`. Set a `while` loop to loop for the length of array found from the value of `length` using the `length` method (i.e., `sequence.length`) while it is less than the actual value of `length`, so it will stop at one less than the actual value. Inside the `while` loop, append the product of the value of `sequence[-1]` and `3` to the end of the `sequence` array. When loop has concluded, return `sequence`.
 
-#### Codewars Kata > Keep Hydrated!
+#### Codewars Kata > Keep Hydrated
 
 >Nathan loves cycling. Because Nathan knows it is important to stay hydrated, he drinks 0.5 litres of water per hour of cycling. You get given the time in hours and you need to return the number of litres Nathan will drink, rounded to the smallest value.
 
