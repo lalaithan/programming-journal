@@ -3,6 +3,7 @@
 > _“[B]y their competence in secular fields and by their personal activity, elevated from within by the grace of Christ, let them work vigorously so that by human labor, technical skill and civil culture, created goods may be perfected according to the design of the Creator and the light of his word.” – St. John Paul II_
 
 - [Resources I Use & Profiles](#resources--profiles)
+- [September 21, 2020 (Ruby - AAO)](#september-21-2020)
 - [September 19, 2020 (Ruby - AAO)](#september-19-2020)
 - [August 10, 2020 (JavaScript - CW)](#august-10-2020)
 - [August 8, 2020 (Ruby - AAO & CW, Jekyll)](#august-8-2020)
@@ -11,6 +12,20 @@
 - [August 5, 2020 (Ruby - AAO)](#august-5-2020)
 - [August 4, 2020 (Ruby - CW)](#august-4-2020)
 - [August 3, 2020 (Ruby - CW)](#august-3-2020)
+
+---
+
+## September 21, 2020
+
+### Ruby
+
+#### App Academy Open > Full Stack Online - Intro to Programming > Advanced Problems > Caesar Ciper
+
+> Write a method `caesar_cipher` that takes in a string and a number. The method should return a new string where every character of the original is shifted `num` characters in the alphabet.
+
+##### Final Working Solution
+
+Define a string `alphabet` to hold the letters of the alphabet and a `new_word` variable with `""` where the new word will be stored after the cipher runs. Enumerate over the `str` input with the `each_char` method, naming the current character `char`. Store the index of the character as it appears in the string `alphabet` into `old_idx`. Add `old_idx` to the `num` input that tells the program how many characters to shift and store the value in `new_idx`. Compute `new_idx` mod `26` and iterate through the `alpabet` string until the value of the most recent computation. Add that character to the end of the variable `new_word`. Return `new_word` after the enumeration is complete.
 
 ---
 
