@@ -3,6 +3,7 @@
 > _“[B]y their competence in secular fields and by their personal activity, elevated from within by the grace of Christ, let them work vigorously so that by human labor, technical skill and civil culture, created goods may be perfected according to the design of the Creator and the light of his word.” – St. John Paul II_
 
 - [Resources I Use & Profiles](#resources--profiles)
+- [October 15, 2020 (Ruby - AAO)](#october-15-2020)
 - [September 21, 2020 (Ruby - AAO)](#september-21-2020)
 - [September 19, 2020 (Ruby - AAO)](#september-19-2020)
 - [August 10, 2020 (JavaScript - CW)](#august-10-2020)
@@ -12,6 +13,20 @@
 - [August 5, 2020 (Ruby - AAO)](#august-5-2020)
 - [August 4, 2020 (Ruby - CW)](#august-4-2020)
 - [August 3, 2020 (Ruby - CW)](#august-3-2020)
+
+---
+
+## October 15, 2020
+
+### Ruby
+
+#### App Academy Open > Full Stack Online - Intro to Programming > Advanced Problems > Vowel Ciper
+
+> Write a method `vowel_cipher` that takes in a string and returns a new string where every vowel becomes the next vowel in the alphabet.
+
+##### Final Working Solution
+
+Since there aren't many vowels to store, a hash named `changes` can be used to store what each vowel should change to. There is still a need to store all the `vowels` into a string to use as a check. Store an enumeration into a variable called `new_word`. To set up the enumeration, run the `split` method on the incoming `string` value, dividing at every character. Run the `map` method on the resulting array and name each value `char`. Use an `ifelse` statement to check if `char` is also in `vowels`. If it isn't, then return the value of `char` (to be stored in the string `new_word`). If it is, use `char` to locate the value the new letter should be in `changes` and return the value of `char`. At the conclusion of the method, run `new_word`
 
 ---
 
