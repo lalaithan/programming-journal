@@ -26,7 +26,7 @@
 
 ##### Final Working Solution
 
-Since there aren't many vowels to store, a hash named `changes` can be used to store what each vowel should change to. There is still a need to store all the `vowels` into a string to use as a check. Store an enumeration into a variable called `new_word`. To set up the enumeration, run the `split` method on the incoming `string` value, dividing at every character. Run the `map` method on the resulting array and name each value `char`. Use an `ifelse` statement to check if `char` is also in `vowels`. If it isn't, then return the value of `char` (to be stored in the string `new_word`). If it is, use `char` to locate the value the new letter should be in `changes` and return the value of `char`. At the conclusion of the method, run `new_word`
+Since there aren't many vowels to store, a hash named `changes` can be used to store what each vowel should change to. There is still a need to store all the `vowels` into a string to use as a check. Store an enumeration into a variable called `new_word`. To set up the enumeration, run the `split` method on the incoming `string` value, dividing at every character. Run the `map` method on the resulting array and name each value `char`. Use an `ifelse` statement to check if `char` is also in `vowels`. If it isn't, then return the value of `char` (to be stored in the string `new_word`). If it is, use `char` to locate the value the new letter should be in `changes` and return the value of `char`. At the conclusion of the method, run `join` (joining at every character) on `new_word` and `return` the result.
 
 ---
 
