@@ -3,6 +3,7 @@
 > _“[B]y their competence in secular fields and by their personal activity, elevated from within by the grace of Christ, let them work vigorously so that by human labor, technical skill and civil culture, created goods may be perfected according to the design of the Creator and the light of his word.” – St. John Paul II_
 
 - [Resources I Use & Profiles](#resources--profiles)
+- [October 31. 2020 (Ruby - AAO)](#october-31-2020)
 - [October 19. 2020 (Ruby - AAO)](#october-19-2020)
 - [October 15, 2020 (Ruby - AAO)](#october-15-2020)
 - [September 21, 2020 (Ruby - AAO)](#september-21-2020)
@@ -14,6 +15,28 @@
 - [August 5, 2020 (Ruby - AAO)](#august-5-2020)
 - [August 4, 2020 (Ruby - CW)](#august-4-2020)
 - [August 3, 2020 (Ruby - CW)](#august-3-2020)
+
+---
+
+## October 31, 2020
+
+### Ruby
+
+#### App Academy Open > Full Stack Online - Intro to Programming > Advanced Problems > Adjacent Sum
+
+> Write a method `adjacent_sum` that takes in an array of numbers and returns a new array containing the sums of adjacent numbers in the original array. See the examples.
+
+##### Final Working Solution
+
+First, initialize an empty array called `new_arr`. Enumerate over the input `arr` using `each_with_index` and assigning each element `ele` with the indeces `i`. Next, use an `if` statement to check if the index isn't the last one by testing `i` against the `length` of `arr` minus `1`. For each value of `i`, add it to the value next to it and append the value onto the end of `new_arr`. Once the enumeration of the array is complete, return `new_arr`.
+
+#### App Academy Open > Full Stack Online - Intro to Programming > Advanced Problems > Pyramid Sum
+
+> Write a method `pyramid_sum` that takes in an array of numbers representing the base of a pyramid. The function should return a 2D array representing a complete pyramid with the given base. To construct a level of the pyramid, we take the sum of adjacent elements of the level below.
+
+##### Final Working Solution
+
+> tbc...
 
 ---
 
