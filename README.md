@@ -3,6 +3,7 @@
 > _“[B]y their competence in secular fields and by their personal activity, elevated from within by the grace of Christ, let them work vigorously so that by human labor, technical skill and civil culture, created goods may be perfected according to the design of the Creator and the light of his word.” – St. John Paul II_
 
 - [Resources I Use & Profiles](#resources--profiles)
+- [October 19. 2020 (Ruby - AAO)](#october-19-2020)
 - [October 15, 2020 (Ruby - AAO)](#october-15-2020)
 - [September 21, 2020 (Ruby - AAO)](#september-21-2020)
 - [September 19, 2020 (Ruby - AAO)](#september-19-2020)
@@ -13,6 +14,20 @@
 - [August 5, 2020 (Ruby - AAO)](#august-5-2020)
 - [August 4, 2020 (Ruby - CW)](#august-4-2020)
 - [August 3, 2020 (Ruby - CW)](#august-3-2020)
+
+---
+
+## October 19, 2020
+
+### Ruby
+
+#### App Academy Open > Full Stack Online - Intro to Programming > Advanced Problems > Double Letter Count
+
+> Write a method that takes in a string and returns the number of times that the same letter repeats twice in a row.
+
+##### Final Working Solution
+
+Declare a variable called `count` with the value `0`. Next, apply an enumerable using `each_char` and `with_index` setting each as `char` and `i`. Create an `if` statement to test if the current character is the same as the next character in the string. If so, then add `1` to `count`. After the enumeration is complete, return the value of `count`.
 
 ---
 
