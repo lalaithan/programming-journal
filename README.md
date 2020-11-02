@@ -1,9 +1,9 @@
 # Programming Journal
 
-> _“[B]y their competence in secular fields and by their personal activity, elevated from within by the grace of Christ, let them work vigorously so that by human labor, technical skill and civil culture, created goods may be perfected according to the design of the Creator and the light of his word.” – St. John Paul II_
+> _“[B]y their competence in secular fields and by their personal activity, elevated from within by the grace of Christ, let them work vigorously so that by human labor, technical skill and civil culture, created goods may be perfected according to the design of the Creator and the light of his word.” – Pope St. John Paul II_
 
 - [Resources I Use & Profiles](#resources--profiles)
-- [November 2, 2020 (JavaScript - CW)](#november-2020)
+- [November 2, 2020 (JavaScript, Ruby - CW, AAO)](#november-2020)
 - [October 15, 19, 31, 2020 (Ruby - AAO)](#october-2020)
 - [September 19, 21, 2020 (Ruby - AAO)](#september-2020)
 - [August 3, 4, 5, 6, 7, 8, 13, 2020 (JavaScript, Ruby, Jekyll - AAO, CW)](#august-2020)
@@ -14,7 +14,7 @@
 
 ### JavaScript
 
-#### 11/2 - CodeWars Kata >> Basic Variable Assignment
+#### 11/2 - CodeWars Kata > Basic Variable Assignment
 
 > This code should store "codewa.rs" as a variable called name but it's not working. Can you figure out why?
 
@@ -27,6 +27,34 @@ var name == a + b;
 ##### Final Working Solution
 
 JavaScript does not use `==` nor `"`. Replace them with `=` and `'` respectively.
+
+### Ruby
+
+#### 11/2 - App Academy Open > Full Stack Online - Intro to Programming > Advanced Problems > Pyramid Sum
+
+> Write a method `pyramid_sum` that takes in an array of numbers representing the base of a pyramid. The function should return a 2D array representing a complete pyramid with the given base. To construct a level of the pyramid, we take the sum of adjacent elements of the level below.
+
+##### Final Working Solution
+
+First, initialize a new array `pyramid` with the input `base` as one element (eg., `pyramid = [base]`). Create a `while` loop to run as long as `pyramid.length` is less than the `length` of the array in `base`. Inside the loop, assign the first element of `pyramid` to `prev_level`. To simplify this method, create a second method named `adjacent_sum` to receive the array in `prev_level`. In the `adjacent_sum` method, initialize an empty array and assign it the name `new_arr`. Call the `each_with_index` method on the input `arr` (array in `prev_level`), assigning `i` to the index. Create an `if` statement to run while `i` doesn't equal `arr.length - 1`. Inside the `if` statement, add the element at index `i` to the element at index `i+1`, then append the resulting value to `new_arr`. `Return` the value of `new_arr` to the `while` loop still running in the original `pyramid_sum` method, to be assigned to the variable named `next_level`. Next, place `next_level` at the beginning of the `pyramid` array by calling `unshift`. Once the `while` loop completes, `return` the resulting `pyramid` array.
+
+#### 11/2 - App Academy Open > Full Stack Online - Intro to Programming > Advanced Problems > All Else Equal
+
+> Write a method `all_else_equal` that takes in an array of numbers. The method should return the element of the array that is equal to half of the sum of all elements of the array. If there is no such element, the method should return nil.
+
+##### Final Working Solution
+
+First, create a second method `sum_array` to add the elements of the array together. Inside `sum_array`, initialize a new variable `sum` to `0`. Next, enumerate over the contents of `arr` (input array) using `each`, assigning each element as `num`, adding each `num` to the value of `sum`. At the completion, `return sum` to the original `all_else_equal` method. Inside `all_else_equal`, assign the resulting value of `sum` to `sum` (a new variable inside this method). Enumerate over the orginal input `arr`, assigning each value to `ele` and test `if ele` is equivalent to the value of `sum / 2.0`. We use `2.0` instead of `2` to allow decimal answers. If this test returns true, return the value of `ele` and end the method. If the result of the test is false, return `nil` and end the method.
+
+#### 11/2 - App Academy Open > Full Stack Online - Intro to Programming > Advanced Problems > Anagrams
+
+> Write a method `anagrams?` that takes in two words and returns a boolean indicating whether or not the words are anagrams. Anagrams are words that contain the same characters but not necessarily in the same order. Solve this without using `.sort`.
+
+##### Final Working Solution
+
+Begin by writing a second method named `char_count` to count the characters in the input `word1` and `word2`, one at a time. Initialize a new hash and name it `count`.
+
+> tbc....
 
 ---
 
