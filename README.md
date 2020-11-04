@@ -3,10 +3,17 @@
 > _“[B]y their competence in secular fields and by their personal activity, elevated from within by the grace of Christ, let them work vigorously so that by human labor, technical skill and civil culture, created goods may be perfected according to the design of the Creator and the light of his word.” – Pope St. John Paul II_
 
 - [Resources I Use & Profiles](#resources--profiles)
-- [November 2, 2020 (JavaScript, Ruby - CW, AAO)](#november-2020)
+- [November 2, 3, 2020 (JavaScript, PHP, Ruby - CW, AAO)](#november-2020)
 - [October 15, 19, 31, 2020 (Ruby - AAO)](#october-2020)
 - [September 19, 21, 2020 (Ruby - AAO)](#september-2020)
 - [August 3, 4, 5, 6, 7, 8, 13, 2020 (JavaScript, Ruby, Jekyll - AAO, CW)](#august-2020)
+
+--
+
+Note:
+
+- CW = CodeWars
+- AAO = App Academy Open
 
 ---
 
@@ -28,13 +35,59 @@ var name == a + b;
 
 JavaScript does not use `==` nor `"`. Replace them with `=` and `'` respectively.
 
+--
+
+### PHP
+
+#### 11/3 - CodeWars Kata > Basic Variable Assignment
+
+> This code should store "codewa.rs" as a variable called name but it's not working. Can you figure out why?
+
+```php
+$a == "code";
+$b == "wa.rs";
+$name == $a + $b;
+```
+
+##### Final Working Solution
+
+In PHP, strings should be surrounded by single quotations and assignment uses a single equal symbol, just like JavaScript yesterday. However, in PHP concatenation is accomplished with a `.` instead of a `+`.
+
+--
+
 ### Ruby
+
+#### 11/3 - App Academy Open > Full Stack Online - Intro to Programming > Advanced Problems > Anagrams
+
+> Write a method `anagrams?` that takes in two words and returns a boolean indicating whether or not the words are anagrams. Anagrams are words that contain the same characters but not necessarily in the same order. Solve this without using `.sort`.
+
+##### Final Working Solution, pt.2
+
+Begin by writing a second method named `char_count` to count the characters in the input `word1` and `word2`, one `word` at a time. Initialize a new hash with the value `0` and name it `count`. Enumerate through each character of `word`, storing both the `char` (character) and increment the number for count by `1`. Return the hash `count` to the `anagrams?` method. In the `anagrams?` method, compare the equivalency between `word1` and `word2`, returning the result.
+
+#### 11/3 - App Academy Open > Full Stack Online - Intro to Programming > Advanced Problems > Consonant Cancel
+
+> Write a method consonant_cancel that takes in a sentence and returns a new sentence where every word begins with it's first vowel.
+
+##### Final Working Solution
+
+Begin by calling `split` on the input `sentence` and assigning it to a variable called `words`. Call `map` on this new array. Assign each element to `word`. Send `word` to a second method called `remove_first_consonant`. In the new method, create a string with all vowels and assign it to `vowels`. Enumerate over `word` using `each_char.with_index` using `char` and `i` for each character and index respectively. Using an `if` statement, test if the `char` is in `vowels`. If it is, return `word` from that index to the last `char` to the original `consonant_cancel` method to replace current element in place; assign all results to new_words. Call `join(" ")` on `new_words` and return the final value.
+
+#### 11/3 - App Academy Open > Full Stack Online - Intro to Programming > Advanced Problems > Same Char Collapse
+
+> Write a method `same_char_collapse` that takes in a string and returns a collapsed version of the string. To collapse the string, we repeatedly delete 2 adjacent characters that are the same until there are no such adjacent characters. If there are multiple pairs that can be collapsed, delete the leftmost pair. For example, we take the following steps to collapse "zzzxaaxy": zzzxaaxy -> zxaaxy -> zxxy -> zy
+
+##### Final Working Solution
+
+Initialize a variable named `reducible` with the value `true`. Use a `while` loop that loops while `reducible` remains `true`. Inside the loop, call `split("")` on the input `str` and store the result in a variable called `chars`. Set the `reducible` variable to `false`. Enumerate through `chars` using `each.with_index` assigning each `char` and `i`. Use an `if` statement to test if the current character is equiavalent to the one following character. If it is, remove the current character along with the next one. Set `reducible` to `true` and `break` the `if` statement. After the enumeration, call `join("")` on `chars` and assign it to `str`. At the completion of the `while` loop, return `str`.
+
+--
 
 #### 11/2 - App Academy Open > Full Stack Online - Intro to Programming > Advanced Problems > Pyramid Sum
 
 > Write a method `pyramid_sum` that takes in an array of numbers representing the base of a pyramid. The function should return a 2D array representing a complete pyramid with the given base. To construct a level of the pyramid, we take the sum of adjacent elements of the level below.
 
-##### Final Working Solution
+##### Final Working Solution, pt. 2
 
 First, initialize a new array `pyramid` with the input `base` as one element (eg., `pyramid = [base]`). Create a `while` loop to run as long as `pyramid.length` is less than the `length` of the array in `base`. Inside the loop, assign the first element of `pyramid` to `prev_level`. To simplify this method, create a second method named `adjacent_sum` to receive the array in `prev_level`. In the `adjacent_sum` method, initialize an empty array and assign it the name `new_arr`. Call the `each_with_index` method on the input `arr` (array in `prev_level`), assigning `i` to the index. Create an `if` statement to run while `i` doesn't equal `arr.length - 1`. Inside the `if` statement, add the element at index `i` to the element at index `i+1`, then append the resulting value to `new_arr`. `Return` the value of `new_arr` to the `while` loop still running in the original `pyramid_sum` method, to be assigned to the variable named `next_level`. Next, place `next_level` at the beginning of the `pyramid` array by calling `unshift`. Once the `while` loop completes, `return` the resulting `pyramid` array.
 
@@ -50,7 +103,7 @@ First, create a second method `sum_array` to add the elements of the array toget
 
 > Write a method `anagrams?` that takes in two words and returns a boolean indicating whether or not the words are anagrams. Anagrams are words that contain the same characters but not necessarily in the same order. Solve this without using `.sort`.
 
-##### Final Working Solution
+##### Final Working Solution, pt. 1
 
 Begin by writing a second method named `char_count` to count the characters in the input `word1` and `word2`, one at a time. Initialize a new hash and name it `count`.
 
@@ -74,9 +127,11 @@ First, initialize an empty array called `new_arr`. Enumerate over the input `arr
 
 > Write a method `pyramid_sum` that takes in an array of numbers representing the base of a pyramid. The function should return a 2D array representing a complete pyramid with the given base. To construct a level of the pyramid, we take the sum of adjacent elements of the level below.
 
-##### Final Working Solution
+##### Final Working Solution, pt. 1
 
 > tbc...
+
+--
 
 #### 10/19 - App Academy Open > Full Stack Online - Intro to Programming > Advanced Problems > Double Letter Count
 
@@ -85,6 +140,8 @@ First, initialize an empty array called `new_arr`. Enumerate over the input `arr
 ##### Final Working Solution
 
 Declare a variable called `count` with the value `0`. Next, apply an enumerable using `each_char` and `with_index` setting each as `char` and `i`. Create an `if` statement to test if the current character is the same as the next character in the string. If so, then add `1` to `count`. After the enumeration is complete, return the value of `count`.
+
+--
 
 #### 10/15 -App Academy Open > Full Stack Online - Intro to Programming > Advanced Problems > Vowel Ciper
 
@@ -107,6 +164,8 @@ Since there aren't many vowels to store, a hash named `changes` can be used to s
 ##### Final Working Solution
 
 Define a string `alphabet` to hold the letters of the alphabet and a `new_word` variable with `""` where the new word will be stored after the cipher runs. Enumerate over the `str` input with the `each_char` method, naming the current character `char`. Store the index of the character as it appears in the string `alphabet` into `old_idx`. Add `old_idx` to the `num` input that tells the program how many characters to shift and store the value in `new_idx`. Compute `new_idx` mod `26` and iterate through the `alpabet` string until the value of the most recent computation. Add that character to the end of the variable `new_word`. Return `new_word` after the enumeration is complete.
+
+--
 
 #### 9/19- App Academy Open > Full Stack Online - Intro to Programming > Advanced Problems > Fibonacci
 
@@ -132,9 +191,13 @@ Define a variable `alphabet` to hold the letters of the alphabet and a `new_word
 
 - 8/4 - The keyword `return` isn't needed when creating methods in Ruby! The last statement that was evaluated in the body of the method is returned by default. If needed, `return` can be used to return from a method earliy.
 
+--
+
 ### Personal Projects > Personal Website
 
 - 8/8 - Installed Jekyll on Linux Mint to use for personal website. Later decided not to use it.
+
+--
 
 ### JavaScript
 
@@ -146,6 +209,8 @@ Define a variable `alphabet` to hold the letters of the alphabet and a `new_word
 
 First, I used `filter` to filter any element with a value below `0` into a new array called `pos_nums`. Next, I used `reduce` with a initial value of `0`, as per the instructions, to add all the values on the last array.
 
+--
+
 ### Ruby
 
 #### 8/13 - App Academy Open > Full Stack Online - Intro to Programming > Advanced Problems > Summation Sequence
@@ -155,6 +220,8 @@ First, I used `filter` to filter any element with a value below `0` into a new a
 ##### Final Working Solution
 
 First, initialize an array with the value from `start` and name it `sum_array`. Use a `while` loop to run while the length of `sum_aray` is less than the value of the `length` input. Assign the value of the last index of the array `sum_array` to the variable `prev`. At this point, it is clear this will be two complex for one method, so two will be needed. Create a new method named `summation`, then pass the value of `prev` (to become `number`) to it. Inside the `summation` method initialize a new variable `summationsum` with the value of `0` inside. Enumerate over the array from `1` to the value of `number` inclusive (naming the current value `i`) adding `i` to the value of `summationsum` and then make it the new value. At the completion of this loop, return the value of `summationsum` to the first method `summation_sequence` to be appended to the `sum_array` array. After the completion of the `while` loop in the `summation_sequence` method, return the value of `sum_array`.
+
+--
 
 #### 8/8 - App Academy Open > Full Stack Online - Intro to Programming > Advanced Problems > Greatest Factor Array
 
@@ -196,6 +263,8 @@ Use the `floor()` method on the product of `time` and `0.5`.
 
 Using a ternary `if` statement, test the input `number` modulo `2` and return `"Even"` if the result is `0`, else return `"Odd"`.
 
+--
+
 #### 8/7 - App Academy Open > Full Stack Online - Intro to Programming > Advanced Problems > Prime Factors
 
 > Write a method `prime_factors` that takes in a number and returns an array containing all of the prime factors of the given number.
@@ -204,6 +273,8 @@ Using a ternary `if` statement, test the input `number` modulo `2` and return `"
 
 First, I initialized an empty array called `factors` to hold the prime factors of the input (`num`). Then I decided to use the previously created `prime?` method to determine if an input is prime already and extend it to return the input if `true`. When I decided to run it, I was getting an empty array and figured out I was including too many numbers and needed an extra `.` in my `prime?` method.
 
+--
+
 #### 8/6 - App Academy Open > Full Stack Online - Intro to Programming > Advanced Problems > Pick Primes
 
 > Write a method `pick_primes` that takes in an array of numbers and returns a new array containing only the prime numbers.
@@ -211,6 +282,8 @@ First, I initialized an empty array called `factors` to hold the prime factors o
 ##### Final Working Solution
 
 In the method `pick_primes`, I used `select` on the inputed array in conjunction with a second method that I borrowed from a previous problem called `prime?`.
+
+--
 
 #### 8/5 - App Academy Open > Full Stack Online - Intro to Programming > Advanced Problems > Most Vowels
 
@@ -228,6 +301,8 @@ In the `most_vowels` method, initialize hash named `tally`. Use `split` to creat
 
 The given method's name prevents just using Ruby's `prime?()` as the solution because it will create an infinite recursion. Since 1 and 2 are prime numbers, use an `if` statement that will return `false` if `num` (input) is below 2. To determine if any other value is prime, enumerate between 2 and the value of `num` exclusive (using `...`) setting each number as `factor`. Use an `if` statement to return `false` if dividing between `num` and `factor` equals 0. Include `return true` at the end of the method for values that don't meet previous tests, signifying they are prime numbers.
 
+--
+
 #### 8/4 - CodeWars Kata #1
 
 > Given a year, return the century it is in.
@@ -235,6 +310,8 @@ The given method's name prevents just using Ruby's `prime?()` as the solution be
 ##### Final Working Solution
 
 Divide input by 100.0. Use `ceil` on quotient and return result.
+
+--
 
 #### 8/3 - CodeWars Kata #1
 
