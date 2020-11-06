@@ -57,6 +57,10 @@ In PHP, strings should be surrounded by single quotations and assignment uses a 
 
 ### Ruby
 
+#### 11/5 - App Academy Open > Software Engineering Foundations > En
+
+Ran `rbenv-installer` script but it said `directory is not present in PATH`.
+
 #### 11/3 - App Academy Open > Full Stack Online - Intro to Programming > Advanced Problems > Anagrams
 
 > Write a method `anagrams?` that takes in two words and returns a boolean indicating whether or not the words are anagrams. Anagrams are words that contain the same characters but not necessarily in the same order. Solve this without using `.sort`.
