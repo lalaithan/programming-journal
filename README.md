@@ -3,7 +3,7 @@
 > _“[B]y their competence in secular fields and by their personal activity, elevated from within by the grace of Christ, let them work vigorously so that by human labor, technical skill and civil culture, created goods may be perfected according to the design of the Creator and the light of his word.” – Pope St. John Paul II_
 
 - [Resources I Use & Profiles](#resources--profiles)
-- [November 2, 3, 2020 (JavaScript, PHP, Ruby - CW, AAO)](#november-2020)
+- [November 2, 3, 5, 6, 2020 (JavaScript, PHP, Ruby - CW, AAO)](#november-2020)
 - [October 15, 19, 31, 2020 (Ruby - AAO)](#october-2020)
 - [September 19, 21, 2020 (Ruby - AAO)](#september-2020)
 - [August 3, 4, 5, 6, 7, 8, 13, 2020 (JavaScript, Ruby, Jekyll - AAO, CW)](#august-2020)
@@ -57,9 +57,70 @@ In PHP, strings should be surrounded by single quotations and assignment uses a 
 
 ### Ruby
 
+#### 11/6 - App Academy Open > Software Engineering Foundations >
+
+```bash
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc
+```
+
+Ran the above to add to the PATH to make `rbenv` commands available from the terminal.
+
+```bash
+echo 'eval "$(rbenv init -)"' >> ~/.zshrc
+```
+
+Ran the above to have `rbenv` initialized every time a new console window is opened.
+
+```bash
+source ~/.zshrc
+```
+
+Ran the above to update the current console window with the new settings.
+
+```bash
+curl -fsSL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-doctor | bash
+```
+
+Ran the above to test if everything was installed correctly.
+
+```bash
+rbenv install 2.5.1
+```
+
+Ran the above to install Ruby vbersion 2.5.1 (requested version by AAO). Got the error `BUILD FAILED` and `ERROR: Ruby install aborted due to missing extensions`. As suggested by the log, going to try:
+
+```bash
+apt-get install -y libssl-dev libreadline-dev
+```
+
+and then:
+
+```bash
+rbenv install 2.5.1
+```
+
+Next, set version 2.5.1 to be the global default with:
+
+```bash
+rbenv global 2.5.1
+```
+
+then update the environment to my configuration with:
+
+```bash
+rbenv rehash
+```
+
+Finally, run `ruby -v` to verify the version of ruby being used and check that rbenv is being used with `which ruby`.
+Install Bundler, Pry, and Byebug gems with `gem install bundler pry byebug`.
+
+--
+
 #### 11/5 - App Academy Open > Software Engineering Foundations > En
 
 Ran `rbenv-installer` script but it said `directory is not present in PATH`.
+
+--
 
 #### 11/3 - App Academy Open > Full Stack Online - Intro to Programming > Advanced Problems > Anagrams
 
