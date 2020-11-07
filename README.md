@@ -3,7 +3,7 @@
 > _“[B]y their competence in secular fields and by their personal activity, elevated from within by the grace of Christ, let them work vigorously so that by human labor, technical skill and civil culture, created goods may be perfected according to the design of the Creator and the light of his word.” – Pope St. John Paul II_
 
 - [Resources I Use & Profiles](#resources--profiles)
-- [November 2, 3, 5, 6, 2020 (JavaScript, PHP, Ruby - CW, AAO)](#november-2020)
+- [November 2, 3, 5, 6, 7, 2020 (JavaScript, PHP, Ruby - CW, AAO)](#november-2020)
 - [October 15, 19, 31, 2020 (Ruby - AAO)](#october-2020)
 - [September 19, 21, 2020 (Ruby - AAO)](#september-2020)
 - [August 3, 4, 5, 6, 7, 8, 13, 2020 (JavaScript, Ruby, Jekyll - AAO, CW)](#august-2020)
@@ -56,6 +56,81 @@ In PHP, strings should be surrounded by single quotations and assignment uses a 
 --
 
 ### Ruby
+
+#### 11/7 - App Academy Open > Software Engineering Foundations > Advanced Ruby > Becoming a Rubyist
+
+- Implicit returns means methods in Ruby will auto return the evaluation of their last executed expression.
+- Omit parentheses for method calls with no arguments.
+- Use single line conditionals when possible.
+- Uee built-in methods.
+- Use enumerables to iterate. Not all enumerables are equal.
+
+#### 11/7 - App Academy Open > Software Engineering Foundations > Advanced Ruby > Common Enumerables
+
+- `each`, `map`, `select` (used previously in course)
+- `all?` - Passes each element of the collection to the given block where it will return `true` if the block never resturns `false` or `nil`. If a block isn't given, Ruby adds an implicit block of { |obj| obj } which will cause `all?` to return `true` when none of the collection members are `false` or `nil`. If instead a pattern is supplied, the method returns whether `pattern === element` for every collction member.
+- `any?` - Return `true` when any element results in `true` when passed into the block.
+- `none?` - Return `true` when none of the elements result in `true` when passed into the block.
+- `one?` - Return `true` when exactly one element resultsd in `true` when passed into the block.
+- `count` - Return a number representing the count of elements that result in `true` when passed into a block. If an argument is given, the number of items in `enum` that are equal to `item` are counted.
+- `sum` - Return the total sum of all elements.
+- `max` and `min` - Return the maximum or minimum element.
+- `flatten` - Return the 1 dimensional version of any element. That is, for every element that is an array, extract its elements into the new array. The optional `level` argument determines the level of recursion to flatten.
+
+#### 11/7 - App Academy Open > Software Engineering Foundations > Advanced Ruby > Symbols
+
+- Symbols vs. Strings
+  - Symbols are denoted with a leading colon `:`.
+  - Symbols are immutable.
+  - Faster due to one memory location.
+  - Commonly used as the key in a hash.
+  - A shortcut can be used only when initializing the symbols in the hash.
+    - Drop the rocket `=>` and move the colon `:` to the right of the symbol.
+
+#### 11/7 - CodeWars Kata > Basic Variable Assignment
+
+> This code should store "codewa.rs" as a variable called name but it's not working. Can you figure out why?
+
+```ruby
+a == "code";
+b == "wa.rs";
+name == a + b;
+```
+
+##### Final Working Solution
+
+Simply remove one `=` sign for each assignment.
+
+#### 11/7 - App Academy Open > Software Engineering Foundations > Advanced Ruby > Default Arguments and Option Hashes
+
+- **Default arguments**
+  - To make an argument optional, simply assign it a value.
+  - If the method is called without explicitly passing in a value for an argument, the argument will be implicitly passed with the argument of `1`.
+  - Useful for implementing methods with default behavior.
+  - `nil` is a common default value.
+  - Best practices: list optional parameters after the required ones.
+- **Option Hashes**
+  - When passing a hash as an argument to a method, the braces can be omitted.
+  - Can be combined with default arguments.
+
+#### 11/7 - App Academy Open > Software Engineering Foundations > Advanced Ruby > Splat Operator `*`
+
+- Allows a method to have the ability to take in more arguments.
+- Additional arguments will be placed into an array.
+- Best practices: use splat at the end of the parameter list to avoid confusion.
+- Can be used to decompose an array.
+- Double splat `**` is used for hashes with symbols for keys.
+
+#### 11/7 - App Academy Open > Software Engineering Foundations > Advanced Ruby > `Inject`
+
+- Functionally identical to `reduce`
+- Iterates through an array, passing the current element to the block or symbol that names a method or operator.
+  - With blocks, each element is passed an accumulator value and the element.
+  - With symbols, each element in the collection will be passed to the named method.
+- Result is stored in the accumulator which is the return value for the method.
+- If no initial value for the accumulator is specified, the first element of collection is used as the intitial value of the acumulator value.
+
+--
 
 #### 11/6 - App Academy Open > Software Engineering Foundations > Introduction > Ruby Environment Setup
 
