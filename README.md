@@ -57,7 +57,7 @@ In PHP, strings should be surrounded by single quotations and assignment uses a 
 
 ### Ruby
 
-#### 11/6 - App Academy Open > Software Engineering Foundations >
+#### 11/6 - App Academy Open > Software Engineering Foundations > Introduction > Ruby Environment Setup
 
 ```bash
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc
@@ -116,7 +116,7 @@ Install Bundler, Pry, and Byebug gems with `gem install bundler pry byebug`.
 
 --
 
-#### 11/5 - App Academy Open > Software Engineering Foundations > En
+#### 11/5 - App Academy Open > Software Engineering Foundations > Introduction > Ruby Environment Setup
 
 Ran `rbenv-installer` script but it said `directory is not present in PATH`.
 
